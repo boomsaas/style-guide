@@ -23,11 +23,11 @@ This is to avoid [bikeshedding](https://en.wiktionary.org/wiki/bikeshedding) and
 
 "It seems that perfection is attained not when there is nothing more to add, but when there is nothing more to remove."
 
-- https://en.wikiquote.org/wiki/Antoine_de_Saint_Exup%C3%A9ry
+[Antoine de Saint Exupéry](https://en.wikiquote.org/wiki/Antoine_de_Saint_Exup%C3%A9ry)
 
 This helps us read our code, refactor easily, check our work, and have better test coverage. Less code is better.
 
-### Naming: be specific
+### Use accurate, real names
 
 Less code doesn't mean giving things the smallest names possible. Giving things single character names increases complexity - **use real variable names, you're not a minifier**. Making other people have to read additional context for every line up to find out where something was defined because `upd = dSrc / data.length` doesn't make sense.
 
@@ -42,11 +42,11 @@ eg rather than `await sleep(240000)`
 
 ### Delete code instead of commenting it out
 
-If you want it back, search `git log`
+This avoids ghost code that doesn't do everything wasting our screens. If you want the deleted code back, search `git log`
 
-### Use 'await' instead of callbacks and `.then()`
+### Use `await` instead of callbacks or `.then()`
 
-Self explanatory. You wouldn't want to use callbacks for sync operations, there's no need to use them anymore for async ones either. No pyramid of doom, no importing custom workflow tools to chain callback operations into array.
+Self explanatory. You wouldn't want to use callbacks for sync operations, there's no need to use them anymore for async operations either. No pyramid of doom, no importing custom workflow tools to chain callback operations into array.
 
 Just don't forget await!
 
@@ -56,7 +56,7 @@ Just `return` and stop execution:
 
 ```javascript
 if (err) {
-  throw new Error(`The laser ${laserID} are misaligned!`);
+  throw new Error(`The laser ${laserID} is misaligned!`);
   return;
 }
 // code here runs if no errs
@@ -135,8 +135,10 @@ Unless the 'what' is particularly complex. Imagine you sat down with someone for
 
 - Give things good names: if you find yourself doing:
 
-  // Get customers
-  var banana = function(){...}
+```javacript
+// Get customers
+var banana = function(){...}
+```
 
 You should rename 'banana' to 'getCustomers' and remove the comment.
 
