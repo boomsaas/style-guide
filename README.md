@@ -64,9 +64,9 @@ if (err) {
 
 ### Refactor on first paste.
 
-Avoid copypasting code. This makes it easier to fix and refactor the app.
+Avoid copy-pasting code. This makes it easier to fix and refactor the app.
 
-If you paste two slightly different versions of the thinsame code, the code will diverge over time and inconsistencies will be created.
+If you paste two slightly different versions of the same code, the code will diverge over time and inconsistencies will be created.
 
 Someone will, at some point, need to refactor and waste massive amounts of time working out what the differences are.
 
@@ -79,7 +79,7 @@ and [Object Oriented Programming Is Embarrassing](https://youtu.be/IRTfhkiAqPw)
 
 Get features out to customers.
 
-`master` should always work. Short lived feature branches are OK. Long lived feature branches are not OK, as long lived feature brances are a pain to merge.
+`master` should always work. Short lived feature branches are OK. Long lived feature branches are not OK, as long lived feature branches are a pain to merge.
 
 Actively pursue simplicity.
 
@@ -89,7 +89,7 @@ Do not commit commented out code. Remove it, using git. If we need it back we ca
 
 ### Use globals carefully for boiler plate work
 
-Globals, or things that extend inbuilt prototypes, should be considered carefully. They're not forbidden, but they should gnerally be used for cases where the stdlib is missing something that will be used across the entire codebase.
+Globals, or things that extend inbuilt prototypes, should be considered carefully. They're not forbidden, but they should generally be used for cases where the stdlib is missing something that will be used across the entire codebase.
 
 \*_All_ node globals are in `/src/shared/globals.js`. Browser globals are in `/src/frontend/`. Ensure that anything you import is in here, so others know where to find them and to ensure that work isn't duplicated.
 
@@ -103,7 +103,7 @@ Self explanatory.
 
 ### Decouple UI from processing.
 
-If you have some code that takes some parameters from an HTTP request, or from HTML elements, pass that input to a seperate function that has no idea about HTTP requests or HTML - it simply gets inout values. Then write a test for that seperate function.
+If you have some code that takes some parameters from an HTTP request, or from HTML elements, pass that input to a separate function that has no idea about HTTP requests or HTML - it simply gets inout values. Then write a test for that separate function.
 
 ### Look on npm before writing a new module.
 
