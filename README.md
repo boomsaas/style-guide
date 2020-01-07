@@ -1,6 +1,6 @@
 # The BoomSaaS Style Guide
 
-## You are writing code for other people
+## You are writing code for other people to read
 
 Code should be as understandable as possible. This means we'll have less to explain to our future selves, and to each other. It requires a little more work up front but that pay off because [this code will be read many times more than it is modified](https://blog.codinghorror.com/when-understanding-means-rewriting/). With that in mind, the patterns below have emerged, and this document has been refined by various folk over a few years.
 
@@ -152,7 +152,7 @@ Trying to work around a bug? Just link to the bug URL. Someone in the future can
 
 ## CSS & HTML specific
 
-- Most CSS and HTML belongs in svelte components. A small amount of 'sensible default' is permitted.
+- Most CSS and HTML belongs in svelte components. Some 'sensible defaults' (styles for text, forms etc that isn't specific to a component) are in `/public/css`.
 - Use CSS grid as the preferred `display` value. No need for floats, clearfix hacks, table cell hacks, negative margin hacks, etc.
 - Use element classes, avoid element IDs - they end up on the JS `window` object
 - Put visual information in CSS, so appearance can be edited and found consistently in CSS.
