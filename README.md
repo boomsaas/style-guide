@@ -1,6 +1,6 @@
 # The BoomSaaS Style Guide
 
-## You are writing code for other people to read
+## We are writing code for other people to read
 
 Code should be as understandable as possible. This means we'll have less to explain to our future selves, and to each other. It requires a little more work up front but that pay off because [this code will be read many times more than it is modified](https://blog.codinghorror.com/when-understanding-means-rewriting/). With that in mind, the patterns below have emerged, and this document has been refined by various folk over a few years.
 
@@ -29,7 +29,7 @@ This helps us read our code, refactor easily, check our work, and have better te
 
 ### Use accurate, real names
 
-Less code doesn't mean giving things the smallest names possible. Giving things single character names increases complexity - **use real variable names, you're not a minifier**. Making other people have to read additional context for every line up to find out where something was defined because `upd = dSrc / data.length` doesn't make sense.
+Less code doesn't mean giving things the smallest names possible. Giving things single character names increases complexity - **use real variable names, we're not minifiers**. Making other people have to read additional context for every line up to find out where something was defined because `upd = dSrc / data.length` doesn't make sense.
 
 As a loose guideline, `is` or `has` is a often great name for Booleans (`isDeleted`, `hasCat` etc), plurals for arrays (`vehicles`), verbs for functions (`getConfig`, `deploy`).
 
