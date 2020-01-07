@@ -133,7 +133,9 @@ Enough said.
 
 Unless the 'what' is particularly complex. Imagine you sat down with someone for a code review. The things you'd explain to the other person, that's not evident from the code, are comments.
 
-- Give things good names: if you find yourself doing:
+#### Good names are preferable to comments
+
+If you find yourself doing:
 
 ```javacript
 // Get customers
