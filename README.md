@@ -97,7 +97,7 @@ Globals, or things that extend inbuilt prototypes, should be considered carefull
 
 CS focuses on algorithmic performance, but other concerns take precedence here. Optimise for releasing and code readability over performance. You can't have scaling issues if you don't have customers. Get customers.
 
-### Use ARC @events for background tasks
+### Use arc @events for background tasks
 
 Self explanatory.
 
@@ -113,12 +113,12 @@ Use recentness, version numbering and GitHub stars to help you decide.
 
 Enough said. `array.includes(x)` not `_.contains(array, x)`
 
-`(2).weeks.ago` not importing moment and editing it.
+`(2).weeks.ago` not importing `moment`.
 
 ### Throw errors
 
 ```javascript
-`throw new Error(reason)`;
+throw new Error(reason)
 ```
 
 For `catch()` purposes.
